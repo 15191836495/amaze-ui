@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>携程</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+        <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    
+	<style>
+		html{height:100%;}
+		body{
+			background: #F3F3F3;
+			margin: 0px;width: 100%;height:100%;margin:0;overflow: hidden;	   	
+		}
+		ul{list-style-type: none;}
+		.div-top{
+			width:100%;height: 50px;
+			border: 1px solid lightgray;
+			background-color: white;		
+		}
+	
+		.div-search{
+			position: relative;border:1px  solid lightgray ;
+			width:88%;
+			border-radius: 4px;box-shadow: 1px 2px 2px lightgray;
+			height: 27px;
+			top:18%;left:1%;
+		}
+		.search{
+			width:80%;
+			border:0px;
+			padding: 5px;
+			float:left;
+			
+			
+			
+		}
+		.logo-search{
+			width:20px;height: 20px;
+			float:left;
+			border-color: white;position: relative;top:4px;left: 2px;
+			
+		}
+		.logo-user{
+			position:relative;
+	        left:90.6%;top:-20px;
+			width:25px;height:25px;
+			
+		}
+		.loca{
+			position: relative;width: 100%;height: 150px;
+		}
+		
+		.div-circle li{ }
+		
+		.div-upone{
+			position:absolute;background-color: white;
+			width:98%;height: 50px;top:205px;border-radius: 10px;border:1px  solid white ;
+			margin-left:2px;margin-right: 2px；}
+		.div-red{
+			position:absolute;background: linear-gradient(to right,red, yellow);width:98%;height: 100px;top:260px;
+			margin-left:2px;margin-right: 2px;border-top-left-radius:10px;
+			border-top-right-radius:10px;border:1px  solid white ;
+			display:flex;
+		}
+		.div-blue{
+			position:absolute;background: linear-gradient(to right,lightblue, skyblue);width:98%;height: 100px;top:365px;
+			margin-left:2px;margin-right: 2px;border:1px  solid white ;
+		}
+		.div-green{
+			position:absolute;background: linear-gradient(to right,green, lightgreen);width:98%;height: 100px;top:470px;
+			margin-left:2px;margin-right: 2px;border-bottom-right-radius:10px;
+			border-bottom-left-radius:10px;border:1px  solid white ;
+		}
+		.div-updown{
+			position:absolute;background-color: white;
+			width:98%;height: 100px;top:575px;border-radius: 10px;border:1px  solid white ;
+			margin-left:2px;margin-right: 2px;
+		}
+		.div-bone{
+			position: absolute;background-color: white;width:100%;height: 150px;top:680px;	
+			
+		}
+		.div-btwo{
+			position: absolute;background-color: white;width:100%;height: 280px;top:835px;
+		}
+		.div-down{
+			position: absolute;background-color: white;width:100%;height: 40px;top:1125px;
+			display: flex;
+		}
+		.div-foot{
+			position: absolute;top:1175px;text-align: center;left:45%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="div-top" onClick="location='search.html'">    
+		<div class="div-search">		
+		<img class="logo-search" src="/img/soutu123.com_4166362_搜索按钮图标_搜图123祝您工作顺利.png" align="middle">
+		<input class="search" placeholder="搜索：目的地/景点/酒店/关键字/航班号">
+	</div>
+		<img src="img/timg.jpg" class="logo-user">
+	</div>   <!-- 头顶搜索框 -->
+	<div class="loca">	
+	 <div class="am-slider am-slider-default" data-am-flexslider id="demo-slider-0">
+    <ul class="am-slides">
+        <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg" style="width: 100%;height: 150px;">
+
+        </li>
+        <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg" style="width: 100%;height: 150px;">
+
+        </li>
+        <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg" style="width: 100%;height: 150px;">
+
+        </li>
+        <li>
+            <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg" style="width: 100%;height: 150px;">
+
+        </li>
+    </ul>
+</div>
+   </div><!-- 轮播图 -->	
+	   <div class="div-upone">        
+        
+		   <div style="position: relative;width:60px;height:50px;left:2%;top: 3px;text-align:center">
+			<img  src="img/eab1ff7afa9ff7c3984598dd0093e00b.jpg" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">景点·旅游</span></div>
+		<div style="position: absolute;width:60px;height:50px;left: 21%;top: 3px;text-align:center">
+			<img  src="img/eab1ff7afa9ff7c3984598dd0093e00b.jpg" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">周边游</span></div>
+		<div style="position: absolute;width:60px;height:50px;left:41% ;top: 3px;text-align:center">
+			<img  src="img/eab1ff7afa9ff7c3984598dd0093e00b.jpg" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">美食林</span></div>
+		<div style="position: absolute;width:60px;height:50px;left: 61%;top: 3px;text-align:center">
+			<img  src="img/eab1ff7afa9ff7c3984598dd0093e00b.jpg" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">一日游</span></div>
+		<div style="position: absolute;width:60px;height:50px;left: 81%;top: 3px;text-align:center">
+			<img  src="img/eab1ff7afa9ff7c3984598dd0093e00b.jpg" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">当地攻略</span></div>
+	 </div>  	<!-- 白色导航栏第一 -->
+	<div class="div-red"> 
+	<div style="border-right: 1px solid white;width: 30%;height:100px; ">
+		<span style="display: block; color: white;text-align: center">酒店</span>
+		<img src="assets/i/pic-tmh-04.png" style="margin-left:10%;"></div>
+		<div style="border: 1px solid white;width: 35%;height:50px;top:-1px;position: absolute;left:29.9%;">
+			<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">海外酒店</span></a></div>
+		<div style="border: 1px solid white;width: 35.1%;height:50px;top:-1px;position: absolute;left:64.9%;">
+			 <a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">团购</span></a></div>
+		<div style="border: 1px solid white;width: 35%;height:50px;top:49px;position: absolute;left:29.9%;">
+			 <a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">特价酒店</span></a></div>
+		<div style="border: 1px solid white;width: 35.1%;height:50px;top:49px;position: absolute;left:64.9%;">
+			 <a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">民俗·客栈</span></a></div>
+	    </div>
+	<div class="div-blue">
+	<div style="border-right: 1px solid white;width: 30%;height:100px; ">
+		<span style="display: block;color: white;text-align: center">机票</span>
+		<img src="assets/i/pic-tmh-04.png" style="margin-left:10%;"></div>
+		<div style="border: 1px solid white;width: 35%;height:50px;top:-1px;position: absolute;left:29.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">火车票</span></a></div>
+		<div style="border: 1px solid white;width: 35.1%;height:50px;top:-1px;position: absolute;left:64.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">汽车票/船票</span></a></div>
+		<div style="border: 1px solid white;width: 35%;height:50px;top:49px;position: absolute;left:29.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">特价机票</span></a></div>
+		<div style="border: 1px solid white;width: 35.1%;height:50px;top:49px;position: absolute;left:64.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">专车·租车</span></a></div>
+	 </div>
+	<div class="div-green">
+		<div style="border-right: 1px solid white;width: 30%;height:100px; ">	
+		<span style="display: block;color: white;margin-top:px;text-align: center">旅游</span>
+			<img src="assets/i/pic-tmh-04.png" style="margin-left:10%;">
+		</div>
+		<div style="border: 1px solid white;width: 35%;height:50px;top:-1px;position: absolute;left:29.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">门票</span></a></div>
+		<div style="border: 1px solid white;width: 35.1%;height:50px;top:-1px;position: absolute;left:64.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">邮轮旅行</span></a></div>
+		<div style="border: 1px solid white;width: 35%;height:50px;top:49px;position: absolute;left:29.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">目的地攻略</span></a></div>
+		<div style="border: 1px solid white;width: 35.1%;height:50px;top:49px;position: absolute;left:64.9%;">
+		<a href="#"><span style="display: block; width: 100%;height:50px;color: white;text-align: center;padding: 10px">定制旅行</span></a></div>
+	</div>
+	<div class="div-updown">
+			<div style="position: relative;width:60px;height:50px;left:2%;top: 3px;text-align:center">
+			<img  src="assets/i/f-cn.19e2f904.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">WiFi电话卡</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:21%;top: 3px;text-align:center">
+			<img  src="assets/i/f-uk.9ad5c202.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">保险.签证</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:41%;top: 3px;text-align:center">
+			<img  src="assets/i/f-th.9d42e144.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">外币兑换</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:61%;top: 3px;text-align:center">
+			<img  src="assets/i/f-sg.1e7c9f96.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">购物</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:81%;top: 3px;text-align:center">
+			<img  src="assets/i/f-ru.783ea011.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">当地向导</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:2%;top: 3px;text-align:center;top:53px">
+			<img  src="assets/i/f-de.682ea44f.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">自由行</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:21%;top: 3px;text-align:center;top:53px">
+			<img  src="assets/i/f-my.a641e56f.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">境外玩乐</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:41%;top: 3px;text-align:center;top:53px">
+			<img  src="assets/i/f-kr.651bc035.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">礼品卡</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:61%;top: 3px;text-align:center;top:53px">
+			<img  src="assets/i/f-en.6062c485.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">信用卡</span></div>
+			<div style="position: absolute;width:60px;height:50px;left:81%;top: 3px;text-align:center;top:53px">
+			<img  src="assets/i/f-fr.4111870a.png" style="display:block;width: 30px;height: 30px;position: relative;left:15px">
+			<span style="font-size:1px;">更多</span></div>
+	</div>             <!-- 白色导航栏第二 -->
+	<div class="div-bone">   
+	<div >                    
+	   <span>
+	   	<img src="img/1e488937ded81a8e78d8214a621442fc.jpg" style="width: 100px;height: 30px;position: relative;left: 10%;" >	   	
+	   </span>
+		<span>
+			<img src="img/point.jpg" style="width: 100px;height: 30px;position: relative;right:-50%;" >
+		</span>
+	</div>                    
+		<div style="position:absolute;background-color: #F3F3F3;width:48%;height: 110px;border-radius:10px;left:1.5%;display: block;">
+		<img src="assets/i/300c0h0000008rtxq3F6B_C_360_202.jpg"  style="width:100%;height: 55px;position:relative;">
+			<div style="text-align: center;width: 100%;height: 50px;top: 15px;position: relative">泰国普吉岛7日5晚跟团游·指定班期价！优质上航！4晚海边酒店</div>
+		</div>	
+		<div style="position:absolute;background-color: #F3F3F3;width:47%;height: 55px;border-radius:10px;left:51% ">
+			<span style="color: deeppink;">千万特价</span><br>走过路过千万不要错过
+			
+		<img src="assets/i/pic-tmh-02.png" style="height: 55px;float:right;margin-top: -25px"></div>
+		<div style="position:absolute;background-color: #F3F3F3;width:23%;height: 50px;border-radius:10px;left:51%;top: 61% ">
+			<span style="color: cornflowerblue;margin-top:15px;position:absolute;">境外精选</span>
+		<img src="assets/i/pic-tmh-04.png" style="width:35px;height: 35px;float:right;">
+		 </div>
+		<div style="position:absolute;background-color: #F3F3F3;width:23%;height: 50px;border-radius:10px;left:75%;top: 61% ">
+		<span style="color: springgreen;margin-top:15px;position:absolute;">周边玩乐</span>
+		<img src="assets/i/pic-tmh-03.png" style="width:35px;height: 35px;float:right;"></div>
+	</div>               
+	<div class="div-btwo">		
+		<div style="border: 1px solid #F3F3F3;width: 100%;height: 50px">
+		<img src="assets/i/1537680063_192860.png" style="height: 50px;margin-left: 50px;">	
+		<img src="assets/i/5-120605203R0-50.gif" style="float: right;height: 25px;margin-top:-35px;">
+		</div>
+		<div style="border: 1px solid #F3F3F3;width: 50%;height: 130px;float: left;">
+		<a href="#"><img src="assets/i/700e0u000000iv3896A2E_621_431_342.jpg" style="border: 1px solid #F3F3F3;width: 100%;height: 130px;float: left;"></a></div>
+		<div style="border: 1px solid #F3F3F3;width: 50%;height: 130px;float: right;">
+		<a href="#"><img src="assets/i/700v0w000000kg4t68E03_621_431_342.jpg" style="border: 1px solid #F3F3F3;width: 100%;height: 130px;float: left;"></a></div>
+		<div style="border: 1px solid #F3F3F3;width: 50%;height: 50px;float: left;">
+		<a href="#"><img src="assets/i/70020w000000keopvA6A9_620_266_345.jpg" style="border: 1px solid #F3F3F3;width: 100%;height: 50px;float: left;"></a></div>
+		<div style="border: 1px solid #F3F3F3;width: 50%;height: 50px;float: right;">
+		<a href="#"><img src="assets/i/700a0t000000im512AB2C_620_266_345.jpg" style="border: 1px solid #F3F3F3;width: 100%;height: 50px;float: left;"></a></div>
+		<div style="border: 1px solid #F3F3F3;width: 50%;height: 50px;float: left;">
+		<a href="#"><img src="assets/i/700d0s000000htvwo16C4_620_266_345.jpg" style="border: 1px solid #F3F3F3;width: 100%;height: 50px;float: left;"></a></div>
+		<div style="border: 1px solid #F3F3F3;width: 50%;height: 50px;float: right;">
+		<a href="#"><img src="assets/i/700d0s000000htvwo16C4_620_266_345.jpg" style="border: 1px solid #F3F3F3;width: 100%;height: 50px;float: left;"></a></div>
+	
+	</div>
+	<div class="div-down">
+	<div style="width: 65px;left: 20%;position: absolute;"> 
+		<img src="img/24a2bb94e6aca4aeffb4f8153590b0f1.jpg" style="width: 20px;height: 20px;display: block;left: 17px;position: relative;">
+		<span>电话预订</span>
+		</div>
+	<div style="width: 85px;left: 45%;position: absolute;"> 
+		<img src="img/24a2bb94e6aca4aeffb4f8153590b0f1.jpg" style="width: 20px;height: 20px;display: block;left: 20px;position: relative;">
+		<span>下载客户端</span>
+		</div>
+	<div style="width: 65px;left: 70%;position: absolute;"> 
+		<img src="img/24a2bb94e6aca4aeffb4f8153590b0f1.jpg" style="width: 20px;height: 20px;display: block;left: 3px;position: relative;">
+		<span>我的</span>
+		</div>
+	</div>
+	<div class="div-foot">携程官网</div>
+	    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+<script>
+    $(function() {
+        var $slider = $('#demo-slider-0');
+        var counter = 0;
+        var getSlide = function() {
+            counter++;
+            return '<li><img src="http://s.amazeui.org/media/i/demos/bing-' +
+                (Math.floor(Math.random() * 4) + 1) + '.jpg" />' +
+                '<div class="am-slider-desc">动态插入的 slide ' + counter + '</div></li>';
+        };
+
+        $('.js-demo-slider-btn').on('click', function() {
+            var action = this.getAttribute('data-action');
+            if (action === 'add') {
+                $slider.flexslider('addSlide', getSlide());
+            } else {
+                var count = $slider.flexslider('count');
+                count > 1 && $slider.flexslider('removeSlide', $slider.flexslider('count') - 1);
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
