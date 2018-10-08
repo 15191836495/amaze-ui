@@ -1,4 +1,4 @@
-const stack = new Stack();
+let stack = new Stack();
 class Stack {
     constructor(){
         this.items = [];
@@ -21,7 +21,7 @@ class Stack {
     }                               //打印栈
 }
 
-const queue = new Queue();
+let queue = new Queue();
 class Queue {
     constructor(){
         this.items = [];
@@ -30,7 +30,7 @@ class Queue {
         this.items.push(e);
     }                                //入队
 
-    pull(){
+    bpull(){
         return this.items.shift();
     }                               //出队
     print(){
@@ -49,8 +49,8 @@ class Queue {
 2，如果栈 a 不为空，则依次弹出栈 a 的元素，放入栈 b 中，再弹出栈 b 的栈顶元素。-->
 
 
-const astack = new Stack();
-const bstack = new Stack();
+let astack = new Stack();
+let bstack = new Stack();
  class squeue {
      // 入队
      spull(e) {
@@ -61,7 +61,7 @@ const bstack = new Stack();
                                 //如果栈b不为空，则先将b中的元素插入a栈中
          else {
              while (!bstack.isEmpty) {
-                 astack.push(bstack.pop());
+                 astack.push(bstack.pull());
              }
                                  //再将元素插入a栈中
              astack.push(e);
@@ -76,17 +76,17 @@ const bstack = new Stack();
           -->
          if (astack.isEmpty){
              if (bstack.isEmpty){
-                 alert("trueempty");
+                 alert("empty");
              }
              else {
-                 bstack.pop();
+                 bstack.pull();
              }
          }
          else {
              while(!astack.isEmpty){
-                 bstack.push(astack.pop());
+                 bstack.push(astack.pull());
              }
-             bstack.pop();
+             bstack.pull();
          }
      }
  }
