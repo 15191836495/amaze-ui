@@ -4,11 +4,15 @@
 解决掉这些小的问题之后，归并子问题的结果，就得到了“大”问题的解。
 -->
 
-let mergeSort = function (left,right) {
+let mergeSort = function () {
     let merge = (left, right) =>{
+
         let result = [];                       // result是存放归并后的数组的数组
-        let il = 0;                            //左数组游标
-        let ir = 0;                            //右数组游标
+        let il = 0,ir = 0;                            //左右数组游标;
+
+
+
+
         while (il < left.length && ir < right.length){
             if (left[il] < right[ir]){
                 result.push(left[il++]);
@@ -16,30 +20,33 @@ let mergeSort = function (left,right) {
             else {
                 result.push(right[ir++]);
             }
-        } <!--
-              如果左边的元素比右边的元素小，就将他放到result中，反之把右边的放进result。
-                    直至有一个数组到头了，就会结束循环，将另一个数组添加到result 的后面。
-            -->
+        }
         while (il < left.length){
             result.push(left[il++]);
         }
         while (ir < right.length){
             result.push(right[ir++]);
         }
+        <!--  如果左边的元素比右边的元素小，就将他放到result中，反之把右边的放进result。
+              直至有一个数组到头了，就会结束循环，将另一个数组添加到result 的后面。
+         -->
+
+
+
         return result;           //返回归并完成的数组
     };         //  并从每个数组的首项开始进行比较，小的元素放到左边，大的元素放到右边。
                // 归并
 
-    let mergeSortRec = arr =>{
+    let mergeback =  arr =>{
         if (arr.length === 1){
             return arr;              //长度为1不拆分
         }
-        let mid = Math.floor(arr.length/2);         //找到中间值
-        let left = arr.slice(0,mid);                // 提取下标0到mid-1的元素到左数组
-        let right = arr.slice(mid,arr.length);      // 提取下标mid到length-1的元素到右数组
-        return merge(mergeSortRec(left), mergeSortRec(right))      //递归归并返回
+        let mid = Math.floor(arr.length/2);                          //找到中间值
+        let left = arr.slice(0,mid);                                 // 提取下标0到mid-1的元素到左数组
+        let right = arr.slice(mid,arr.length);                      // 提取下标mid到length-1的元素到右数组
+        return merge(mergeback(left), mergeback(right))      //递归归并返回
     };
-        return mergeSortRec(this);
+        return mergeback(this);
 };                                                   //拆分
 
 <!--
