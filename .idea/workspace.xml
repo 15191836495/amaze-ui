@@ -15,26 +15,27 @@
     <session id="1508293352">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
-          <entry key="project.open.time.0" value="3" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.4" value="3" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
+          <entry key="html" value="2" />
           <entry key="js" value="17" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="2" />
           <entry key="JavaScript" value="17" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -56,10 +57,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/stack.js">
+        <entry file="file://$PROJECT_DIR$/xiecheng index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="21" selection-end-column="1" />
+              <caret lean-forward="true" selection-end-line="36" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -92,7 +93,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -102,6 +103,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,11 +111,21 @@
               <item name="amaze ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="amaze ui" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="amaze ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amaze ui" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="amaze ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amaze ui" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -186,17 +198,19 @@
       <workItem from="1539059601793" duration="1342000" />
       <workItem from="1539061039667" duration="178000" />
       <workItem from="1539061261460" duration="4000" />
+      <workItem from="1539072239659" duration="137000" />
+      <workItem from="1539072598495" duration="139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12824000" />
+    <option name="totallyTimeSpent" value="13100000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24893162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1227608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -269,6 +283,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiecheng index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" selection-end-line="36" selection-end-column="57" />
         </state>
       </provider>
     </entry>
