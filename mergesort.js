@@ -3,7 +3,7 @@
 二路归并排序主要运用了“分治算法”，分治算法就是将一个大的问题划分为n个规模较小而结构相似的子问题。
 解决掉这些小的问题之后，归并子问题的结果，就得到了“大”问题的解。
 -->
-
+console.log("begin");
 let mergeSort = function () {
     let merge = (left, right) =>{
 
